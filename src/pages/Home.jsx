@@ -3,7 +3,8 @@ import Img from "../assets/photo.png";
 import ShinyText from './ShinyText'; 
 import  git from "../assets/git.png";
 import linkedin from "../assets/linkedin.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+import insta from "../assets/insta.png";
 
 
 
@@ -61,7 +62,11 @@ function Home() {
                 "&:hover": {
                   bgcolor: '#938e8ea4'
                 }, }}></CardMedia>
-          <CardMedia component="img" image={linkedin } sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
+          <CardMedia component={Link} to="https://www.linkedin.com/in/asmita-jadhav-24b00b22b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" image={linkedin } sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
+                "&:hover": {
+                  bgcolor: '#938e8ea4'
+                },}}></CardMedia>
+          <CardMedia component={Link} to="https://www.instagram.com/filmmbaker?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" image={insta} sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
                 "&:hover": {
                   bgcolor: '#938e8ea4'
                 },}}></CardMedia>
