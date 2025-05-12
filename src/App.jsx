@@ -1,13 +1,13 @@
 
 import {useEffect} from 'react' 
-import { Link, useLocation } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import {  BrowserRouter as Router, Routes,Route } from 'react-router-dom'
-import Home from './pages/Home'
+
+
+import Home from './pages/Home' 
 import Skills from './pages/Skills'
 import NavBar from './NavBar'
 import Contact from './pages/Contact'
 import EandE from './pages/EandE'
+import Experience from './pages/Experience';  
 function App() {
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
     };
 
     window.addEventListener('hashchange', handleHashChange);
-    handleHashChange(); // handle initial load
+    handleHashChange(); 
 
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -37,8 +37,11 @@ function App() {
       <Skills/></div> 
 
 
-      <div id='education-and-experience'>
+      <div id='education'>
       <EandE/> </div> 
+
+      <div id='experience'>
+      <Experience/></div>
 
       <div id='contact'>
       <Contact/></div>

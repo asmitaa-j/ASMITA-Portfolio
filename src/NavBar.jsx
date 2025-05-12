@@ -7,7 +7,7 @@ function NavBar() {
     return(
         <>
 
-         <AppBar position="static"  sx={{ px: 8, py:2, bgcolor: 'black' }}>
+         <AppBar position="static"  sx={{ px: 8, py:2, bgcolor: 'black', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000 }}>
       <Toolbar disableGutters>
         {/* Logo */}
         <Typography
@@ -28,7 +28,8 @@ function NavBar() {
         <Box >
          <a href="#home">Home</a>
           <a href="#skills"> Skills</a>
-          <a href="#education-and-experience">Education & Experience</a> 
+          <a href="#education">Education </a> 
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </Box>
       </Toolbar>

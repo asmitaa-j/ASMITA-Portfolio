@@ -1,11 +1,18 @@
 import { Container, Box, Typography, CardMedia, Card } from "@mui/material";
 import Img from "../assets/photo.png"; 
-import ShinyText from './ShinyText';
+import ShinyText from './ShinyText'; 
+import  git from "../assets/git.png";
+import linkedin from "../assets/linkedin.png";
+import { Link } from "react-router-dom";
+
+
 
 function Home() {
   return (
-    <>
-      <Box sx={{ height: "100vh", bgcolor: "#000", display:'flex' }}>
+    <> 
+   
+    
+      <Box sx={{ height: "100vh", bgcolor: "#000", display:'flex', mb:'0'}}>
         <Box sx={{ width:'50%', display:'flex', justifyContent: 'center', alignItems: 'center', mb:'80px' }}>
           <Box
             sx={{
@@ -30,13 +37,13 @@ function Home() {
                 },
               }}
             ></CardMedia>
-          </Box>
-        </Box>
+          </Box> 
+        </Box> 
         <Box sx={{width:'50%', display:'flex', justifyContent: 'center', alignItems: '', flexDirection:'column'}}>
           <Typography variant="h2" sx={{ mb:'10px',color: "#fff", transition: "transform 0.5s ease-in-out",
                 "&:hover": {
                   transform: "scale(1.05) ",
-                }, display:'inline', width:"420px" }}>
+                }, display:'inline', width:"450px" }}>
             Helloo!! <br />This is  <ShinyText text="Asmita :)" disabled={false} speed={2} className='custom-class' />
           </Typography>
           <Typography variant="h2" sx={{ color: "#fff" , display:'flex', }}>
@@ -46,10 +53,25 @@ function Home() {
                 "&:hover": {
                   transform: "scale(1.05) ",
                 }, display:'inline', width:"425px" }}> <ShinyText  text="Web Developer" disabled={false} speed={2} className='custom-class' /></Typography>
-                  
+
+
+
+         <Box sx={{ display:'flex', justifyContent:'flex-start', alignItems:'center',  mt:"30px"} }>
+          <CardMedia component={Link} to='https://github.com/asmitaa-j' image={git} sx={{ bgcolor:'white', width:'65px', height:'4rem', borderRadius:'50px', m:'10px',  transition: "transform 0.5s ease-in-out",
+                "&:hover": {
+                  bgcolor: '#938e8ea4'
+                }, }}></CardMedia>
+          <CardMedia component="img" image={linkedin } sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
+                "&:hover": {
+                  bgcolor: '#938e8ea4'
+                },}}></CardMedia>
+          </Box>         
          
-        </Box>
-      </Box>
+        </Box> 
+</Box>
+          
+
+      
     </>
   );
 }
