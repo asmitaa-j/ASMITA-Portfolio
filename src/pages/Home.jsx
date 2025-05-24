@@ -66,10 +66,10 @@ function Home() {
                 "&:hover": {
                   bgcolor: '#938e8ea4'
                 },}}></CardMedia>
-          <CardMedia component={Link} to="https://www.instagram.com/filmmbaker?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" image={insta} sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
+          {/* <CardMedia component={Link} to="https://www.instagram.com/filmmbaker?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" image={insta} sx={{ bgcolor:'white', width:'70px', height:'4rem', borderRadius:'50px', m:'10px', transition: "transform 0.5s ease-in-out",
                 "&:hover": {
                   bgcolor: '#938e8ea4'
-                },}}></CardMedia>
+                },}}></CardMedia> */}
           </Box>         
          
         </Box> 

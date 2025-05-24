@@ -10,7 +10,7 @@ function EandE()
     <Box sx={{ width:'100%',bgcolor: "#000", display:'flex', justifyContent:'center', alignItems:'center' }}> 
 
 
-    <Card sx={{display:'flex', width:'30%'}}>
+    <Card sx={{display:'flex', width:'30%', bgcolor:' #b5b5b5a4'}}>
        <CardMedia component="img"
                    
                      image={UMIT} sx={{width:'200px', height:'25rem'}}></CardMedia> 
@@ -25,7 +25,7 @@ function EandE()
        </CardContent>
     </Card>
 
-    <Card sx={{display:'flex', width:'30%', mx:'20px'}}>
+    <Card sx={{display:'flex', width:'30%', mx:'20px', bgcolor:' #b5b5b5a4'}}>
        <CardMedia component="img"
                     
                      image={college} sx={{width:'200px', height:'25rem'}}></CardMedia> 
@@ -41,7 +41,7 @@ function EandE()
        </CardContent>
     </Card> 
 
-    <Card sx={{display:'flex', width:'30%'}}>
+    <Card sx={{display:'flex', width:'30%', bgcolor:' #b5b5b5a4'}}>
        <CardMedia component="img" image={school} sx={{width:'200px', height:'25rem'}}></CardMedia> 
        <CardContent>
         <Typography variant="h4" sx={{ color: "black", mb:'20px', }}>
